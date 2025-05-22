@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forcing Refresh...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #10B04A;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      margin: 0 auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Clearing Cache and Refreshing</h1>
+  <p>Please wait while we clear your browser cache and reload the page...</p>
+  <div class="loader"></div>
+  
+  <script>
+    // Clear browser cache and storage
+    function clearCacheAndReload() {
+      // Clear localStorage
+      localStorage.clear();
+      
+      // Clear sessionStorage
+      sessionStorage.clear();
+      
+      // Clear cookies by setting expiration in the past
+      document.cookie.split(";").forEach(function(c) {
+        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+
+      // Force reload the main page from server (not from cache)
+      setTimeout(function() {
+        window.location.href = window.location.origin + '?nocache=' + new Date().getTime();
+      }, 2000);
+    }
+    
+    // Run when page loads
+    clearCacheAndReload();
+  </script>
+</body>
+</html> 

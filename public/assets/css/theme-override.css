@@ -1,0 +1,119 @@
+/* Theme Override CSS - Applying consistent colors throughout the site */
+
+/* Icons color override */
+.las, 
+.fa, 
+.fab, 
+.far {
+    color: #3B77DE !important;
+}
+
+/* Special icons that need to stand out */
+.flaticon,
+.header-area .las, 
+.emcontact-box .las,
+.footer-area .las,
+.apply-btn .las {
+    color: #4D9FF3 !important;
+}
+
+/* White icons for dark backgrounds */
+.main-menu .las,
+.main-menu-box .las,
+.sticky-menu .las,
+.footer-widget .las,
+.course-category .las,
+.dark-bg .las,
+.dark-bg .fa,
+.dark-bg .fab {
+    color: #FFFFFF !important;
+}
+
+/* Social media icons with vibrant colors */
+.bar-social .fa-facebook-f {
+    color: #1877F2 !important;
+}
+
+.bar-social .fa-twitter {
+    color: #1DA1F2 !important;
+}
+
+.bar-social .fa-linkedin-in {
+    color: #0A66C2 !important;
+}
+
+.bar-social .fa-instagram {
+    color: #E4405F !important;
+}
+
+/* Button hover effects */
+.apply-btn a:hover,
+.btn-primary:hover,
+a.btn-primary:hover,
+button.btn-primary:hover {
+    background: linear-gradient(90deg, rgb(26, 41, 101) 0%, rgb(48, 75, 113) 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(44, 151, 234, 0.4) !important;
+}
+
+/* Section headers and titles */
+section h2, 
+section h3,
+.section-title h2,
+.section-title h3 {
+    color: #182B49 !important;
+}
+
+/* Link colors */
+a:hover {
+    color: #4D9FF3 !important;
+}
+
+/* Navigation active item */
+.nav-item.active > a,
+.nav-link.active {
+    color: #4D9FF3 !important;
+}
+
+/* Card and box shadows */
+.course-box,
+.event-box,
+.blog-box,
+.instructor-item,
+.testimonial-item {
+    box-shadow: 0 0 15px rgba(44, 151, 234, 0.1) !important;
+}
+
+/* Accent borders */
+.border-accent {
+    border-color: #3B77DE !important;
+}
+
+/* Footer adjustments */
+footer a:hover {
+    color: #4D9FF3 !important;
+}
+
+/* Form elements */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3B77DE !important;
+    box-shadow: 0 0 5px rgba(44, 151, 234, 0.3) !important;
+}
+
+/* Call to action sections */
+.cta-section {
+    background: linear-gradient(90deg, rgb(26, 41, 101) 0%, rgb(48, 75, 113) 100%) !important;
+}
+
+/* Buttons and badges */
+.badge-primary,
+.tag-primary {
+    background-color: #3B77DE !important;
+}
+
+/* Progress bars */
+.progress-bar {
+    background-color: #4D9FF3 !important;
+} 

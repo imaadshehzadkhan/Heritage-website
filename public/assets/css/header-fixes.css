@@ -1,0 +1,143 @@
+/* Header Fixes CSS */
+
+/* Logo Contact Box Styles */
+.logo-contact-box {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* Hexagonal Icon Box Styles */
+.emcontact-box {
+    margin-right: 45px !important;
+    display: flex !important;
+}
+
+.emcontact-box .box-icon {
+    background: #10B04A !important;
+    height: 36px !important;
+    text-align: center !important;
+    margin-top: 10px !important;
+    margin-right: 12px !important;
+    position: relative !important;
+    width: 36px !important;
+}
+
+.emcontact-box .box-icon i {
+    position: relative !important;
+    z-index: 111 !important;
+    font-size: 22px !important;
+    color: #ffffff !important;
+    width: 36px !important;
+    display: inline-block !important;
+    margin-top: 5px !important;
+}
+
+.emcontact-box .box-icon:before {
+    content: "" !important;
+    position: absolute !important;
+    border-width: 18px 18px !important;
+    border-style: solid !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: #10B04A !important;
+    border-left-color: transparent !important;
+    top: -36px !important;
+    left: 0 !important;
+    z-index: 1 !important;
+}
+
+.emcontact-box .box-icon:after {
+    content: "" !important;
+    position: absolute !important;
+    border-width: 18px 18px !important;
+    border-style: solid !important;
+    border-top-color: #10B04A !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    bottom: -36px !important;
+    left: 0 !important;
+    z-index: 1 !important;
+}
+
+/* Box Content Styles */
+.emcontact-box .box-content {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.emcontact-box .box-content p {
+    font-size: 14px !important;
+    color: #666666 !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+}
+
+.emcontact-box .box-content span {
+    font-size: 17px !important;
+    color: #333333 !important;
+    font-weight: 600 !important;
+    display: block !important;
+}
+
+/* Apply Button Styles */
+.apply-btn a {
+    font-size: 13px !important;
+    color: #ffffff !important;
+    background: #10B04A !important;
+    display: inline-block !important;
+    width: 110px !important;
+    height: 40px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    padding: 11px !important;
+    border-radius: 0 5px 5px 0 !important;
+    position: relative !important;
+}
+
+.apply-btn a i {
+    position: absolute !important;
+    font-size: 20px !important;
+    left: -40px !important;
+    top: 0 !important;
+    padding: 10px !important;
+    width: 40px !important;
+    height: 100% !important;
+    border-radius: 5px 0 0 5px !important;
+    background-color: #0CA044 !important;
+    color: #ffffff !important;
+}
+
+.apply-btn a:hover {
+    background: #0CA044 !important;
+}
+
+/* Responsive Fixes */
+@media(max-width: 991px) {
+    .emcontact-box {
+        margin-right: 20px !important;
+    }
+    
+    .emcontact-box .box-icon {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .logo-contact-box {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .emcontact-box {
+        margin-right: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .apply-btn {
+        margin-top: 15px !important;
+    }
+} 

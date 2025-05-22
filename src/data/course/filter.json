@@ -1,0 +1,53 @@
+{
+    "secTitle": "Explore Our School Highlights",
+    "dataList": [
+        {
+            "id": "1",
+            "targetId": "highlights",
+            "imgUrl": "assets/images/highlight1.jpg",
+            "courseTitle": "Computer Lab Facilities",
+            "courseDesc": "Our state-of-the-art computer lab provides students with the latest technology to enhance their learning experience.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "2",
+            "targetId": "events",
+            "imgUrl": "assets/images/highlight2.jpg",
+            "courseTitle": "Annual School Function",
+            "courseDesc": "Students participate in our vibrant annual day celebration showcasing their talents through performances and exhibitions.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "3",
+            "targetId": "projects",
+            "imgUrl": "assets/images/highlight3.jpg",
+            "courseTitle": "Science Exhibition",
+            "courseDesc": "Our students demonstrate their scientific aptitude through innovative projects and experiments at the annual science fair.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "4",
+            "targetId": "activities",
+            "imgUrl": "assets/images/highlight4.jpg",
+            "courseTitle": "Sports Day Celebration",
+            "courseDesc": "Students showcase their athletic abilities and team spirit during our annual sports day event with various competitions.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "5",
+            "targetId": "infra",
+            "imgUrl": "assets/images/highlight5.jpg",
+            "courseTitle": "Modern Classrooms",
+            "courseDesc": "Our classrooms are equipped with modern teaching aids to provide an interactive and engaging learning environment.",
+            "courseLink": "/course-details"
+        },
+        {
+            "id": "6",
+            "targetId": "highlights",
+            "imgUrl": "assets/images/highlight6.jpg",
+            "courseTitle": "Cultural Activities",
+            "courseDesc": "We encourage students to participate in various cultural activities that help develop their artistic talents and creativity.",
+            "courseLink": "/course-details"
+        }
+    ]
+}

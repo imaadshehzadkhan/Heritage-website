@@ -1,0 +1,104 @@
+/* Heritage School Custom Styles */
+
+/* Logo Styling */
+.sticky-menu .logo {
+    display: flex !important;
+    align-items: center !important;
+    overflow: visible !important;
+    position: relative;
+}
+
+.sticky-menu .logo img {
+    max-height: 100px;
+    width: auto;
+    margin-top: -13px;
+    margin-bottom: -26px;
+    position: relative;
+    z-index: 12;
+}
+
+/* Compact Header Styles */
+.logo-area {
+    padding: 5px 0;
+}
+
+.logo-area .row {
+    min-height: 70px;
+}
+
+.logo-area .logo img {
+    max-height: 85px;
+    width: auto;
+}
+
+/* Sticky Menu Styles */
+.sticky-menu {
+    background-color: #ffffff !important;
+}
+
+/* Sticky Menu Nav Items */
+.sticky-menu .menu-nav li a {
+    font-size: 13px !important;
+}
+
+/* Apply Button Customization */
+.apply-btn a {
+    background: linear-gradient(90deg, #4d80b3 0%, #2d3e69 100%) !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding: 10px 15px !important;
+    width: 130px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 3px !important;
+    color: white !important;
+}
+
+.sticky-menu .apply-btn a {
+    width: 130px !important;
+    height: 35px !important;
+}
+
+.apply-btn a:hover {
+    background: linear-gradient(90deg, #2d3e69 0%, #4d80b3 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 6px 15px rgba(45, 62, 105, 0.5) !important;
+}
+
+.apply-btn a i {
+    margin-right: 5px !important;
+}
+
+/* Compact Menu Styles */
+.main-menu .main-menu-box .menu-box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-menu .main-menu-box .menu-box ul.nav.menu-nav li.nav-item a.nav-link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 991px) {
+    .sticky-menu .school-name {
+        font-size: 14px;
+    }
+    
+    .logo-area .row {
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-area {
+        padding: 5px 0;
+    }
+    
+    .logo-area .logo img {
+        max-width: 150px;
+    }
+} 
