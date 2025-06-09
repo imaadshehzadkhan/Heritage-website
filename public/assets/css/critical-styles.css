@@ -12,7 +12,7 @@
 }
 
 .emcontact-box {
-    margin-right: 45px !important;
+    margin-right: 30px !important;
     display: flex !important;
 }
 
@@ -65,34 +65,96 @@
     display: block !important;
 }
 
-/* Apply button - smaller with theme color */
+/* Apply button - blue with white text/icon */
+.apply-btn {
+    margin-left: 15px !important;
+}
+
 .apply-btn a {
-    font-size: 12px !important;
+    font-size: 13px !important;
     color: #ffffff !important;
-    background: #0D3380 !important;
+    background: linear-gradient(135deg, #0D3380 0%, #082c70 100%) !important;
     display: inline-block !important;
-    width: 90px !important;
-    height: 35px !important;
+    width: 200px !important;
+    height: 36px !important;
     text-align: center !important;
     text-transform: uppercase !important;
-    font-weight: 500 !important;
-    padding: 9px !important;
-    border-radius: 0 4px 4px 0 !important;
+    font-weight: 600 !important;
+    padding: 11px 15px 11px 40px !important;
+    border-radius: 4px !important;
     position: relative !important;
     box-shadow: 0 4px 10px rgba(13, 51, 128, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .apply-btn a i {
-    position: absolute !important;
     font-size: 16px !important;
-    left: -32px !important;
-    top: 0 !important;
-    padding: 9px !important;
-    width: 32px !important;
-    height: 100% !important;
-    border-radius: 4px 0 0 4px !important;
-    background-color: #082c70 !important;
     color: #ffffff !important;
+    margin-right: 4px !important;
+    position: absolute !important;
+    left: 5px !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #082c70 !important;
+    border-radius: 4px 0 0 4px !important;
+}
+
+.apply-btn a:hover {
+    background: linear-gradient(135deg, #082c70 0%, #061d4c 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 6px 15px rgba(13, 51, 128, 0.5) !important;
+}
+
+/* Top bar layout improvements */
+.top-bar {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.top-bar .container {
+    position: relative;
+}
+
+.top-bar .bar-left ul {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .bar-left ul li {
+    padding: 8px 10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .bar-left ul li.address-li {
+    max-width: 220px;
+    overflow: hidden;
+}
+
+.top-bar .bar-left ul li.address-li span {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.top-bar .bar-left ul li i {
+    margin-right: 5px;
+    font-size: 16px;
+    min-width: 16px;
+    flex-shrink: 0;
+}
+
+.top-bar .bar-right ul.bar-login li a {
+    white-space: nowrap;
 }
 
 /* Search and Menu Icons */
@@ -168,6 +230,15 @@
     z-index: 99 !important;
 }
 
+/* Layout alignments and spacing */
+.main-menu .main-menu-box .menu-box {
+    padding-right: 0 !important;
+}
+
+.main-menu .main-menu-box .menu-box ul.nav.menu-nav {
+    justify-content: flex-end !important;
+}
+
 /* Responsive fixes */
 @media(max-width: 991px) {
     .emcontact-box {
@@ -182,5 +253,11 @@
     .menu-toggle {
         width: 35px !important;
         height: 35px !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .apply-btn {
+        margin-left: 0 !important;
     }
 } 

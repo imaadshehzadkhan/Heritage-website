@@ -3,27 +3,55 @@ import { colors } from "../common/element/elements.js";
 
 export const Styles = styled.div`
     .top-bar2 {
-        height       : 40px;
+        height       : auto;
         border-bottom: 1px solid ${colors.border1};
+        background: #f6f6f6;
+        padding: 0;
 
         .bar-left {
-            margin-top: 8px;
+            margin-top: 0;
 
             ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                
                 li {
                     font-size   : 14px;
                     color       : ${colors.text2};
                     margin-right: 20px;
-                    display     : inline-block;
+                    display     : inline-flex;
+                    align-items: center;
+                    padding: 8px 0;
 
                     i {
                         font-size     : 18px;
-                        color         : ${colors.green};
+                        color         : #0D3380;
                         vertical-align: text-bottom;
                         margin-right  : 5px;
+                        flex-shrink: 0;
 
                         @media(max-width: 1199px) {
                             margin-right : 2px;
+                        }
+                    }
+
+                    &.address-li {
+                        display: flex;
+                        align-items: center;
+                        max-width: 200px;
+                        overflow: hidden;
+                        
+                        span {
+                            display: inline-block;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+                        
+                        i {
+                            min-width: 18px;
                         }
                     }
 
@@ -41,88 +69,6 @@ export const Styles = styled.div`
         .bar-right {
             margin-top: 6px;
 
-            ul.bar-lang {
-                margin-right: 30px;
-                position    : relative;
-                margin-top  : 3px;
-
-                &::before {
-                    position  : absolute;
-                    content   : "";
-                    background: ${colors.border1};
-                    width     : 1px;
-                    height    : 20px;
-                    top       : 0;
-                    right     : -15px;
-                }
-
-                li {
-                    .dropdown {
-                        button.dropdown-toggle {
-                            font-size : 13px;
-                            color     : ${colors.text2};
-                            background: transparent;
-                            border    : none;
-                            padding   : 0;
-                            box-shadow: none;
-
-                            img {
-                                margin-right: 5px;
-                                max-width   : 21px;
-                            }
-
-                            i {
-                                font-size  : 12px;
-                                margin-left: 3px;
-                            }
-
-                            &::after {
-                                display: none;
-                            }
-
-                            &:hover {
-                                cursor: pointer;
-                                color : ${colors.green};
-                            }
-                        }
-
-                        ul.dropdown-menu {
-                            padding         : 0;
-                            margin          : 0;
-                            border          : none;
-                            background-color: #ffffff;
-                            border-radius : 5px;
-                            top       : 50% !important;
-                            left      : -16px !important;
-                            box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-
-                            li {
-                                display      : block;
-                                border-bottom: 1px solid ${colors.border1};
-                                padding      : 7px 15px;
-                                color        : ${colors.text3};
-                                cursor       : pointer;
-
-                                img {
-                                    max-width   : 21px;
-                                    margin-right: 5px;
-                                }
-
-                                &:hover {
-                                    color           : ${colors.black1};
-                                    font-weight     : 500;
-                                    background-color: transparent;
-                                }
-
-                                &:last-child {
-                                    border-bottom: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
             ul.bar-social {
                 margin-right: 30px;
                 position    : relative;
@@ -138,10 +84,13 @@ export const Styles = styled.div`
                 }
 
                 li {
+                    display: inline-block;
+                    margin-right: 8px;
+                    
                     a {
                         font-size  : 13px;
-                        color      : ${colors.green};
-                        background : ${colors.border1};
+                        color      : #ffffff;
+                        background : #0D3380;
                         display    : inline-block;
                         width      : 25px;
                         height     : 25px;
@@ -150,7 +99,7 @@ export const Styles = styled.div`
                         border-radius : 5px;
 
                         &:hover {
-                            background: ${colors.green};
+                            background: #082c70;
                             color     : #ffffff;
                         }
                     }
@@ -167,15 +116,29 @@ export const Styles = styled.div`
                 }
             }
 
-            ul.sidebar-button {
-                li.side-box {
-                    a.nav-link {
-                        font-size  : 20px;
-                        padding    : 0;
-                        line-height: 28px;
+            ul.bar-login {
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+                    
+                    a {
+                        font-size: 13px;
+                        color: ${colors.text2};
+                        
                         i {
-                            color : ${colors.green};
+                            font-size: 16px;
+                            color: #0D3380;
+                            margin-right: 5px;
+                            vertical-align: text-bottom;
                         }
+                        
+                        &:hover {
+                            color: #0D3380;
+                        }
+                    }
+                    
+                    &:last-child {
+                        margin-right: 0;
                     }
                 }
             }
@@ -188,13 +151,17 @@ export const Styles = styled.div`
 
     .logo-area2 {
         height     : 82px;
-        padding-top: 20px;
+        padding-top: 15px;
 
         .logo {
             a {
                 img {
+                    max-height: 65px;
+                    width: auto;
+                    
                     @media(max-width: 991px) {
                         max-width: 100%;
+                        max-height: 55px;
                     }
                 }
             }
@@ -202,18 +169,25 @@ export const Styles = styled.div`
 
         div.menu-box {
             ul.nav.menu-nav {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-right: 15px;
+                
                 li.nav-item {
                     position: relative;
+                    margin: 0 10px;
 
                     a.nav-link {
-                        font-size     : 14px;
+                        font-size     : 13px;
                         color         : ${colors.black1};
                         text-transform: uppercase;
                         font-weight   : 500;
-                        padding       : 10px 10px 20px;
+                        padding       : 10px 5px 20px;
+                        white-space: nowrap;
 
                         i {
-                            font-size: 12px;
+                            font-size: 10px;
+                            margin-left: 2px;
                         }
 
                         &:after {
@@ -221,12 +195,13 @@ export const Styles = styled.div`
                         }
 
                         &:hover {
-                            color: ${colors.green};
+                            color: #0D3380;
                         }
 
                         @media(max-width: 1199px) {
                             padding: 10px 2px 20px;
                             letter-spacing: 0;
+                            font-size: 11px;
                         }
                     }
 
@@ -249,58 +224,31 @@ export const Styles = styled.div`
 
                         li.nav-item {
                             position: relative;
+                            margin: 0;
 
                             a.nav-link {
-                                font-size     : 13px;
-                                color         : ${colors.text1};
-                                padding       : 10px 20px;
+                                font-size    : 13px;
+                                color        : ${colors.text1};
+                                padding      : 10px 20px;
                                 text-transform: capitalize;
-                                font-weight   : 400;
-                                margin-right  : 0;
-                                border-bottom : 1px solid ${colors.border1};
+                                margin-right : 0px;
+                                font-weight  : 400;
+                                border-bottom: 1px solid ${colors.border1};
 
                                 &:hover {
-                                    color: ${colors.green};
-
-                                    i {
-                                        color: #fff;
+                                    color: #0D3380;
                                     }
-                                }
 
-                                i {
-                                    float     : right;
-                                    margin-top: 4px;
+                                &::before {
+                                    content: none;
                                 }
                             }
 
                             &:last-child {
-                                margin-left: 0;
+                                margin-bottom: 0;
 
                                 a.nav-link {
                                     border-bottom: none;
-                                }
-                            }
-
-                            ul.dropdown2 {
-                                position  : absolute;
-                                top       : 0;
-                                left      : 100%;
-                                min-width : 180px;
-                                background: #fff;
-                                border    : 1px solid ${colors.border1};
-                                transition : 0.2s ease;
-                                opacity         : 0;
-                                transform       : scaleY(0);
-                                visibility      : hidden;
-                                z-index         : 999;
-                                transform-origin: center top 0;
-                            }
-
-                            &:hover {
-                                ul.dropdown2 {
-                                    opacity   : 1;
-                                    transform : scaleY(1);
-                                    visibility: visible;
                                 }
                             }
                         }
@@ -317,74 +265,60 @@ export const Styles = styled.div`
             }
 
             .search-box {
-                margin-left: 18px;
-                margin-top : 11px;
+                margin-right: 10px;
 
-                a {
-                    padding: 0;
-
+                .search-icon {
                     i {
                         font-size: 18px;
-                        color    : ${colors.green};
+                        color    : ${colors.black1};
                     }
-                }
-
-                i.close-btn {
-                    position : absolute;
-                    top      : 25px;
-                    right    : -12px;
-                    font-size: 26px;
-                    color    : ${colors.green};
-                    cursor   : pointer;
-                }
-
-                @media(max-width: 1199px) {
-                    margin-left : 5px;
                 }
             }
 
             .apply-btn {
-                margin-left: 70px;
-                margin-top : -1px;
-
                 a {
-                    font-size     : 13px;
-                    color         : #ffffff;
-                    background    : ${colors.gr_bg};
-                    display       : inline-block;
-                    width         : 110px;
-                    height        : 40px;
-                    text-align    : center;
-                    text-transform: uppercase;
-                    font-weight   : 500;
-                    padding       : 11px;
-                    border-radius : 0 5px 5px 0;
-                    position: relative;
-
+                    font-size: 13px !important;
+                    color: #ffffff !important;
+                    background: linear-gradient(135deg, #0D3380 0%, #082c70 100%) !important;
+                    display: flex !important;
+                    width: 160px !important;
+                    height: 40px !important;
+                    text-align: center !important;
+                    text-transform: uppercase !important;
+                    font-weight: 600 !important;
+                    padding: 11px 15px 11px 40px !important;
+                    border-radius: 4px !important;
+                    position: relative !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    box-shadow: 0 4px 10px rgba(13, 51, 128, 0.3) !important;
+                    
                     i {
-                        position : absolute;
-                        font-size: 20px;
-                        left     : -40px;
-                        top      : 0;
-                        padding  : 10px;
-                        width    : 40px;
-                        height   : 100%;
-                        border-radius : 5px 0 0 5px;
-                        background-color: ${colors.green2};
+                        font-size: 16px !important;
+                        color: #ffffff !important;
+                        margin-right: 4px !important;
+                        position: absolute !important;
+                        left: 5px !important;
+                        top: 0 !important;
+                        height: 100% !important;
+                        width: 35px !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        background: #082c70 !important;
+                        border-radius: 4px 0 0 4px !important;
                     }
 
                     &:hover {
-                        background: ${colors.gr_bg2};
+                        background: linear-gradient(135deg, #082c70 0%, #061d4c 100%) !important;
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0px 6px 15px rgba(13, 51, 128, 0.5) !important;
                     }
-                }
-
-                @media(max-width: 991px) {
-                    display : none;
                 }
             }
         }
 
-        @media(max-width: 767px) {
+        @media(max-width: 991px) {
             display: none;
         }
     }

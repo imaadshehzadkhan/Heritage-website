@@ -8,7 +8,7 @@ import TestimonialSlider from './components/TestimonialSlider';
 import TeamSlider from './components/TeamSlider';
 import HelpArea from './components/HelpArea';
 import CampusTour from './components/CampusTour';
-import Footer from './components/Footer';
+import FooterTwo from './components/FooterTwo';
 
 export default class HomeOne extends Component {
     render() {
@@ -43,7 +43,7 @@ export default class HomeOne extends Component {
                     <CampusTour />
 
                     {/* Footer */}
-                    <Footer />
+                    <FooterTwo />
                 </div>
             </React.Fragment>
         )

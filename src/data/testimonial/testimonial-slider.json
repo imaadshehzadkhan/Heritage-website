@@ -4,19 +4,35 @@
     "dataList": [
         {
             "id": "1",
-            "testimonialTitle": "It is great to be a part of this community.",
-            "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
-            "authorImg": "testimonial-1.jpg",
-            "authorName": "David Show",
-            "authorTitle": "Developer"
+            "testimonialTitle": "Heritage School has transformed my learning experience!",
+            "testimonialDesc": "My School isn’t just a building. It is nurturing soil where seeds of my dream were planted, they guided light that shaped my journey. Grateful to be student and part of its family. Forever  connected to the roots that helped me grow.",
+            "authorImg": "testonomial.png",
+            "authorName": "Humairah Farooq ",
+            "authorTitle": "Medical College Jammu"
         },
         {
             "id": "2",
-            "testimonialTitle": "It is great to be a part of this community.",
-            "testimonialDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitation maior. Placeat repellat, et totam optio. Sequi qui laborum ratione cumque tempo totam voluptatum.",
-            "authorImg": "testimonial-2.jpg",
-            "authorName": "Tom Parker",
-            "authorTitle": "Programmer"
+            "testimonialTitle": "A perfect balance of academics and activities",
+            "testimonialDesc": "Heritage is my first school holds special place in my heart as it was there where I took my first steps into world of learning. I am proud to be part of Heritage Family.",
+            "authorImg": "testonomial.png",
+            "authorName": "Maryam Farooq ",
+            "authorTitle": "Jamia Millia Unniversity Topper"
+        },
+        {
+            "id": "3",
+            "testimonialTitle": "Heritage School helped me build confidence",
+            "testimonialDesc": "I am in Indian Instt. of Science Bangalore and this journey started from Heritage..",
+            "authorImg": "testonomial.png",
+            "authorName": "Muzamil ",
+            "authorTitle": "IISC Bangalore"
+        },
+        {
+            "id": "4",
+            "testimonialTitle": "Heritage gave me wings to fly high.",
+            "testimonialDesc": "Heritage School is not just a school, it is a family. It is a place where I learned to fly high and achieve my dreams. I am proud to be a part of this family.",
+            "authorImg": "testonomial.png",
+            "authorName": "Zainab Lone ",
+            "authorTitle": "Medical College Srinagar"
         }
     ]
 }

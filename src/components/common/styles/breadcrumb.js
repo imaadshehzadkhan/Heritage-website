@@ -4,16 +4,18 @@ import { colors } from "../element/elements.js";
 export const Styles = styled.div`
     .breadcrumb-area {
         background-size    : cover;
-        background-position: center;
+        background-position: center center;
         background-repeat  : no-repeat;
-        padding            : 60px 0;
+        padding            : 50px 0;
         position           : relative;
+        overflow           : hidden;
+        height             : 250px;
 
         &:before {
             position  : absolute;
             content   : '';
-            background: ${colors.bg1};
-            opacity   : 0.5;
+            background: rgba(8, 25, 59, 0.85);
+            opacity   : 0.9;
             width     : 100%;
             height    : 100%;
             top       : 0;
@@ -21,19 +23,25 @@ export const Styles = styled.div`
         }
 
         .breadcrumb-box {
-            background: ${colors.bg1};
+            background: rgb(4, 26, 67);
             display   : inline-block;
-            padding   : 30px 45px;
-            border-radius : 5px;
+            padding   : 25px 40px;
+            border-radius : 0;
+            position  : relative;
+            z-index   : 1;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            min-width : 250px;
 
             h2.breadcrumb-title {
-                color         : #ffffff;
-                font-weight   : 600;
+                color         : #ffffff !important;
+                font-weight   : 700;
+                font-size     : 32px;
                 text-transform: uppercase;
-                margin-bottom : 5px;
+                margin-bottom : 6px;
+                letter-spacing: 1px;
 
                 @media(max-width: 767px) {
-                    font-size : 20px;
+                    font-size : 24px;
                 }
             }
 
@@ -43,23 +51,28 @@ export const Styles = styled.div`
                     padding         : 0;
                     margin-bottom   : 0;
                     background-color: transparent;
-                    border-radius : 0;
+                    border-radius   : 0;
+                    justify-content : center;
 
                     li.breadcrumb-item {
                         a {
-                            color: ${colors.green};
+                            color      : #ffffff;
+                            font-weight: 400;
+                            font-size  : 14px;
 
                             &:hover {
-                                color: #ffffff;
+                                color: ${colors.green};
                             }
                         }
                     }
 
                     li.breadcrumb-item.active {
-                        color: ${colors.border3};
+                        color      : ${colors.green};
+                        font-weight: 400;
+                        font-size  : 14px;
 
                         &::before {
-                            color: ${colors.border3};
+                            color: rgba(255, 255, 255, 0.7);
                         }
                     }
                 }
@@ -67,7 +80,8 @@ export const Styles = styled.div`
         }
 
         @media(max-width: 767px) {
-            padding: 30px 0;
+            padding: 40px 0;
+            height: 200px;
         }
     }
 `;

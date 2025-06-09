@@ -20,7 +20,7 @@ class Footer extends Component {
                                     <ul className="list-unstyled">
                                         <li><i className="las la-map-marker"></i>Hanjiwera Pattan, Baramulla, J&K</li>
                                         <li><i className="las la-envelope"></i>pil@pioneerinstitute.in</li>
-                                        <li><i className="las la-phone"></i>+91 9596298036</li>
+                                        <li><i className="las la-phone"></i>+91 9906819261, +91 9797960419</li>
                                     </ul>
                                 </div>
                             </Col>

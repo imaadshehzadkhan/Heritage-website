@@ -58,9 +58,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Academic Block</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="4" md="6">
@@ -71,9 +68,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>School Library</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="4" md="6">
@@ -84,9 +78,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Sports Ground</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="6" md="6">
@@ -97,9 +88,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Science Lab</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="6" md="6">
@@ -110,9 +98,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Computer Lab</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="4" md="6">
@@ -123,9 +108,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Auditorium</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="4" md="6">
@@ -136,9 +118,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Cafeteria</h5>
-                                    </div>
                                 </div>
                             </Col>
                             <Col lg="4" md="6">
@@ -149,9 +128,6 @@ class CampusTour extends Component {
                                         alt="Campus Image"
                                         className="gallery-image" 
                                     />
-                                    <div className="tour-overlay">
-                                        <h5>Art Room</h5>
-                                    </div>
                                 </div>
                             </Col>
                         </Row>

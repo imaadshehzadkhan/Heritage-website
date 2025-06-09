@@ -86,8 +86,11 @@ export const Styles = styled.div`
                             border-radius : 50%;
                             text-align  : center;
                             padding-top : 9px;
-                            margin-top  : 7px;
+                            margin-top  : 0px;
                             margin-right: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }
 
                         &:last-child {

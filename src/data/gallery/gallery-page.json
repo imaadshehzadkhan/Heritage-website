@@ -1,29 +1,29 @@
 [
     {
-        "galleryImage": "imagegallery-01.jpg"
+        "galleryImage": "gal1.JPG"
     },
     {
-        "galleryImage": "imagegallery-02.jpg"
+        "galleryImage": "gal2.JPG"
     },
     {
-        "galleryImage": "imagegallery-03.jpg"
+        "galleryImage": "gal3.JPG"
     },
     {
-        "galleryImage": "imagegallery-04.jpg"
+        "galleryImage": "gal4.JPG"
     },
     {
-        "galleryImage": "imagegallery-05.jpg"
+        "galleryImage": "gal5.JPG"
     },
     {
-        "galleryImage": "imagegallery-06.jpg"
+        "galleryImage": "gal6.JPG"
     },
     {
-        "galleryImage": "imagegallery-07.jpg"
+        "galleryImage": "gal7.JPG"
     },
     {
-        "galleryImage": "imagegallery-08.jpg"
+        "galleryImage": "gallery8.jpg"
     },
     {
-        "galleryImage": "imagegallery-09.jpg"
+        "galleryImage": "gal9.JPG"
     }
 ]

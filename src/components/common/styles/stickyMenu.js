@@ -22,7 +22,7 @@ export const Styles = styled.div`
         animation: none;
         background: #ffffff;
         height: 70px;
-        padding: 0 20px; /* added horizontal padding */
+        padding: 0 10px; /* reduced horizontal padding */
         box-shadow: 0 0 20px -10px #222222;
         transition: all 0.5s ease;
         display: flex;
@@ -50,7 +50,7 @@ export const Styles = styled.div`
 
         .menu-box {
             flex: 1;
-            margin-left: 60px; /* reduce gap from logo */
+            margin-left: 30px; /* reduce gap from logo */
 
             ul.nav.menu-nav {
                 display: flex;
@@ -59,6 +59,7 @@ export const Styles = styled.div`
                 padding: 0;
                 list-style: none;
                 flex-wrap: nowrap; /* prevent wrapping to new line */
+                justify-content: flex-end; /* align menu to the right */
 
                 li.nav-item {
                     position: relative;
@@ -215,24 +216,7 @@ export const Styles = styled.div`
         }
 
         .search-cart-bar {
-            display: flex;
-            align-items: center;
-            margin: 0 10px;
-
-            li.search-box {
-                position: relative;
-                margin-right: 0;
-
-                .search-button i,
-                .nav-search i {
-                    font-size: 16px;
-                    color: ${colors.black1};
-                }
-
-                &:hover i {
-                    color: ${colors.green};
-                }
-            }
+            margin: 0 5px;
         }
 
         /* Menu toggle icon */
@@ -254,7 +238,7 @@ export const Styles = styled.div`
         }
 
         .apply-btn {
-            margin-left: 5px;
+            margin-left: 5px; /* reduced margin to bring button closer */
             margin-top: 0;
             flex-shrink: 0;
 

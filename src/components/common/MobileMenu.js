@@ -59,7 +59,7 @@ function MobileMenu() {
                         <Col md="0" sm="12">
                             <div className="mb-topbar d-flex justify-content-between">
                                 <div className="topbar-item">
-                                    <p><i className="las la-phone"></i>+91 9596298036</p>
+                                    <p><i className="las la-phone"></i>+91 9906819261</p>
                                 </div>
                                 <div className="topbar-item">
                                     <ul className="list-unstyled list-inline">
@@ -83,6 +83,11 @@ function MobileMenu() {
                                 <div className="mb-contact">
                                     <p><i className="flaticon-envelope"></i> pil@pioneerinstitute.in</p>
                                 </div>
+                            </div>
+                            <div className="mb-info-box">
+                                <p><i className="las la-phone"></i>+91 9906819261</p>
+                                <p><i className="las la-map-marker"></i><span style={{whiteSpace: "nowrap", display: "inline-block"}}>Choora Hygam Baramullah J&K 193121</span></p>
+                                <p><i className="las la-envelope"></i>info@heritageschool.com</p>
                             </div>
                         </Col>
                     </Row>
@@ -125,7 +130,9 @@ function MobileMenu() {
                         <div className="mb-menu-content show">
                             <ul className="list-unstyled">
                                 <li><Link to={process.env.PUBLIC_URL + "/about"}>About School</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/faculty"}>Faculty</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/mission-vision"}>Mission and Vision</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/patron-message"}>Message from Patron</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/principal-message"}>Message from Principal</Link></li>
                                 <li><Link to={process.env.PUBLIC_URL + "/facilities"}>Facilities</Link></li>
                             </ul>
                         </div>

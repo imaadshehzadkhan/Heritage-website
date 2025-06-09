@@ -31,18 +31,33 @@
     "faqDataList": [
         {
             "id": "1",
-            "faqTitle": "I don't know What should I write here?",
-            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid. 3 wolf moon."
+            "faqTitle": "What are the admission requirements for Heritage School?",
+            "faqDesc": "Admission to Heritage School is based on entrance tests, previous academic records, and an interview. We look for students who demonstrate potential for academic excellence and good character. The process typically begins in January for the upcoming academic year."
         },
         {
             "id": "2",
-            "faqTitle": "I don't know What should I write here?",
-            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid."
+            "faqTitle": "What curriculum does Heritage School follow?",
+            "faqDesc": "Heritage School follows the J&K State Board curriculum with additional enrichment programs to ensure a well-rounded education. We place special emphasis on languages, mathematics, sciences, and social studies while also focusing on co-curricular activities."
         },
         {
             "id": "3",
-            "faqTitle": "I don't know What should I write here?",
-            "faqDesc": "Anim pariatur cliche reprehenderit, enim eiusm high life accusamus terry richardson ad squid. 3 wolf moon."
+            "faqTitle": "What are the school timings?",
+            "faqDesc": "School hours are from 9:00 AM to 3:30 PM, Monday through Saturday. We have a half day on Saturdays with classes ending at 12:30 PM. The school year typically runs from March to December with breaks for summer and winter."
+        },
+        {
+            "id": "4",
+            "faqTitle": "Does the school provide transportation services?",
+            "faqDesc": "Yes, we offer transportation services covering major routes in Baramulla district. Our fleet of school buses is well-maintained and equipped with safety features. Transportation fees vary depending on the distance from the school."
+        },
+        {
+            "id": "5",
+            "faqTitle": "What extracurricular activities are available at Heritage School?",
+            "faqDesc": "We offer a wide range of extracurricular activities including sports (cricket, football, basketball, volleyball), arts (music, dance, drama, painting), debate, robotics, coding, and various clubs. We believe these activities are essential for holistic development."
+        },
+        {
+            "id": "6",
+            "faqTitle": "How does the school communicate with parents?",
+            "faqDesc": "We maintain regular communication through our parent portal, quarterly parent-teacher meetings, report cards, and newsletters. Parents can also schedule meetings with teachers or administration when needed. We believe in a strong home-school partnership."
         }
     ]
 }

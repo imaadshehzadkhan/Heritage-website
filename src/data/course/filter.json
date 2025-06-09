@@ -5,7 +5,7 @@
             "id": "1",
             "targetId": "highlights",
             "imgUrl": "assets/images/highlight1.jpg",
-            "courseTitle": "Computer Lab Facilities",
+            "courseTitle": "School Picnic",
             "courseDesc": "Our state-of-the-art computer lab provides students with the latest technology to enhance their learning experience.",
             "courseLink": "/course-details"
         },
@@ -21,7 +21,7 @@
             "id": "3",
             "targetId": "projects",
             "imgUrl": "assets/images/highlight3.jpg",
-            "courseTitle": "Science Exhibition",
+            "courseTitle": "Sports Day Celebration",
             "courseDesc": "Our students demonstrate their scientific aptitude through innovative projects and experiments at the annual science fair.",
             "courseLink": "/course-details"
         },
@@ -29,7 +29,7 @@
             "id": "4",
             "targetId": "activities",
             "imgUrl": "assets/images/highlight4.jpg",
-            "courseTitle": "Sports Day Celebration",
+            "courseTitle": "Modern Classrooms",
             "courseDesc": "Students showcase their athletic abilities and team spirit during our annual sports day event with various competitions.",
             "courseLink": "/course-details"
         },
@@ -37,7 +37,7 @@
             "id": "5",
             "targetId": "infra",
             "imgUrl": "assets/images/highlight5.jpg",
-            "courseTitle": "Modern Classrooms",
+            "courseTitle": "Cocurricular Activities",
             "courseDesc": "Our classrooms are equipped with modern teaching aids to provide an interactive and engaging learning environment.",
             "courseLink": "/course-details"
         },
@@ -45,7 +45,7 @@
             "id": "6",
             "targetId": "highlights",
             "imgUrl": "assets/images/highlight6.jpg",
-            "courseTitle": "Cultural Activities",
+            "courseTitle": "Transport Facility",
             "courseDesc": "We encourage students to participate in various cultural activities that help develop their artistic talents and creativity.",
             "courseLink": "/course-details"
         }

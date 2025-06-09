@@ -14,15 +14,18 @@ class Header extends Component {
                 <section className="top-bar">
                     <Container>
                         <Row>
-                            <Col lg="6" md="5">
+                            <Col lg="8" md="9">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Choora Hygam , Baramulla, J&K</li>
-                                        <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/faq"}>Have Questions</Link></li>
+                                        <li className="list-inline-item" style={{marginRight: "20px"}}><i className="las la-phone"></i>+91 9906819261</li>
+                                        <li className="list-inline-item address-li" style={{marginLeft: "15px", maxWidth: "550px"}}>
+                                            <i className="las la-map-marker"></i>
+                                            <span style={{fontWeight: "500", display: "inline-block", whiteSpace: "nowrap", fontSize: "14px"}}>Choora Hygam Baramullah J&K 193121</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </Col>
-                            <Col lg="6" md="7">
+                            <Col lg="4" md="3">
                                 <div className="bar-right d-flex justify-content-end">
                                     <ul className="list-unstyled list-inline bar-social">
                                         <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
@@ -77,7 +80,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content" style={{display: 'flex', flexDirection: 'column'}}>
                                             <p style={{fontSize: '13px', color: '#666666', marginBottom: '0', fontWeight: '500'}}>Call Us Now</p>
-                                            <span style={{fontSize: '15px', color: '#333333', fontWeight: '600', display: 'block'}}>+91 9596298036</span>
+                                            <span style={{fontSize: '15px', color: '#333333', fontWeight: '600', display: 'block'}}>+91 9906819261</span>
                                         </div>
                                     </div>
                                     <div className="emcontact-box" style={{display: 'flex'}}>
@@ -112,31 +115,47 @@ class Header extends Component {
                             <Col lg="3" md="3" className="text-right">
                                 <div className="apply-btn">
                                     <Link to={process.env.PUBLIC_URL + "/registration"} style={{
-                                        fontSize: '12px',
+                                        fontSize: '14px',
                                         color: '#ffffff',
-                                        background: '#0D3380',
-                                        display: 'inline-block',
-                                        width: '90px',
-                                        height: '35px',
+                                        background: 'linear-gradient(135deg, #0D3380 0%, #082c70 100%)',
+                                        display: 'flex',
+                                        width: '200px',
+                                        height: '40px',
                                         textAlign: 'center',
                                         textTransform: 'uppercase',
-                                        fontWeight: '500',
-                                        padding: '9px',
-                                        borderRadius: '0 4px 4px 0',
+                                        fontWeight: '600',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: '10px 15px 10px 40px',
+                                        borderRadius: '4px',
                                         position: 'relative',
-                                        boxShadow: '0 4px 10px rgba(13, 51, 128, 0.3)'
+                                        boxShadow: '0 4px 10px rgba(13, 51, 128, 0.3)',
+                                        transition: 'all 0.3s ease'
+                                    }} 
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-2px)';
+                                        e.currentTarget.style.boxShadow = '0px 6px 15px rgba(13, 51, 128, 0.5)';
+                                        e.currentTarget.style.background = 'linear-gradient(135deg, #082c70 0%, #061d4c 100%)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = '0 4px 10px rgba(13, 51, 128, 0.3)';
+                                        e.currentTarget.style.background = 'linear-gradient(135deg, #0D3380 0%, #082c70 100%)';
                                     }}>
                                         <i className="las la-clipboard-list" style={{
                                             position: 'absolute',
                                             fontSize: '16px',
-                                            left: '-32px',
+                                            left: '5px',
                                             top: '0',
                                             padding: '9px',
-                                            width: '32px',
+                                            width: '35px',
                                             height: '100%',
                                             borderRadius: '4px 0 0 4px',
                                             backgroundColor: '#082c70',
-                                            color: '#ffffff'
+                                            color: '#ffffff',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
                                         }}></i>APPLY NOW
                                     </Link>
                                 </div>
@@ -177,7 +196,13 @@ class Header extends Component {
                                                         <Link to={process.env.PUBLIC_URL + "/about"}>About School</Link>
                                                     </div>
                                                     <div className="menu-item">
-                                                        <Link to={process.env.PUBLIC_URL + "/faculty"}>Faculty</Link>
+                                                        <Link to={process.env.PUBLIC_URL + "/mission-vision"}>Mission and Vision</Link>
+                                                    </div>
+                                                    <div className="menu-item">
+                                                        <Link to={process.env.PUBLIC_URL + "/patron-message"}>Message from Patron</Link>
+                                                    </div>
+                                                    <div className="menu-item">
+                                                        <Link to={process.env.PUBLIC_URL + "/principal-message"}>Message from Principal</Link>
                                                     </div>
                                                     <div className="menu-item">
                                                         <Link to={process.env.PUBLIC_URL + "/facilities"}>Facilities</Link>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 import Search from './Search';
 import { Styles } from "./styles/stickyMenu.js";
 
@@ -43,7 +42,9 @@ function StickyMenu() {
                             <Link className="nav-link dropdown-toggle" to={process.env.PUBLIC_URL + "/"} data-toggle="dropdown">SCHOOL <i className="las la-angle-down"></i></Link>
                             <ul className="dropdown list-unstyled">
                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>About School</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faculty"}>Faculty</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/mission-vision"}>Mission and Vision</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/patron-message"}>Message from Patron</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/principal-message"}>Message from Principal</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/facilities"}>Facilities</Link></li>
                             </ul>
                         </li>

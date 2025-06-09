@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './helper/ScrollToTop';
 import { GlobalStyle } from "./components/common/styles/global.js";
@@ -24,15 +24,32 @@ import BlogDetails from './pages/blog/BlogDetails';
 import Product from './pages/shop/Products';
 import ProductDetails from './pages/shop/ProductDetails';
 import Cart from './pages/shop/Cart';
+import MissionVision from './pages/mission-vision/MissionVision';
+import PatronMessage from './pages/patron-message/PatronMessage';
+import PrincipalMessage from './pages/principal-message/PrincipalMessage';
+import Facilities from './pages/facilities/Facilities';
+import AdmissionModal from './components/AdmissionModal';
 
 function App() {
+    const [showModal, setShowModal] = useState(true);
+
+    useEffect(() => {
+        // Show modal right away, no delay
+        setShowModal(true);
+    }, []);
+
     return (
         <Router>
             <GlobalStyle />
             <ScrollToTop />
+            <AdmissionModal show={showModal} onClose={() => setShowModal(false)} />
             <Switch>
                 <Route exact path={`${process.env.PUBLIC_URL + "/"}`} component={HomeOne} />
                 <Route path={`${process.env.PUBLIC_URL + "/about"}`} component={About} />
+                <Route path={`${process.env.PUBLIC_URL + "/mission-vision"}`} component={MissionVision} />
+                <Route path={`${process.env.PUBLIC_URL + "/patron-message"}`} component={PatronMessage} />
+                <Route path={`${process.env.PUBLIC_URL + "/principal-message"}`} component={PrincipalMessage} />
+                <Route path={`${process.env.PUBLIC_URL + "/facilities"}`} component={Facilities} />
                 <Route path={`${process.env.PUBLIC_URL + "/course-grid"}`} component={CourseGrid} />
                 <Route path={`${process.env.PUBLIC_URL + "/course-list"}`} component={CourseList} />
                 <Route path={`${process.env.PUBLIC_URL + "/course-details"}`} component={CourseDetails} />

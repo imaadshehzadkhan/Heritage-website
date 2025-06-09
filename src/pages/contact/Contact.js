@@ -93,7 +93,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Our Location</h5>
-                                        <p>795 South Park Avenue, Long Island, Newyork, NY 94107.</p>
+                                        <p>Choora Hygam Baramullah J&K 193121</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
@@ -102,7 +102,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Email Address</h5>
-                                        <p>info@mydomain.com<br />enquery@edu.com</p>
+                                        <p>contact@theheritageschool.in<br />info@theheritageschool.in</p>
                                     </div>
                                 </div>
                                 <div className="contact-icon-box d-flex">
@@ -111,7 +111,7 @@ function Contact() {
                                     </div>
                                     <div className="box-content">
                                         <h5>Phone Number</h5>
-                                        <p>+1 (396) 486 4709<br />+1 (396) 486 8419</p>
+                                        <p>+91 9906819261, +91 9797960419</p>
                                     </div>
                                 </div>
                                 <div className="contact-social">

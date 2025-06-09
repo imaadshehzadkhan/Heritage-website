@@ -81,36 +81,66 @@
 }
 
 /* Apply Button Styles */
+.apply-btn {
+    margin-left: 15px !important;
+}
+
 .apply-btn a {
     font-size: 13px !important;
     color: #ffffff !important;
-    background: #10B04A !important;
-    display: inline-block !important;
-    width: 110px !important;
-    height: 40px !important;
+    background: linear-gradient(135deg, #0D3380 0%, #082c70 100%) !important;
+    display: flex !important;
+    width: 200px !important;
+    height: 36px !important;
     text-align: center !important;
     text-transform: uppercase !important;
-    font-weight: 500 !important;
-    padding: 11px !important;
-    border-radius: 0 5px 5px 0 !important;
+    font-weight: 600 !important;
+    padding: 11px 15px 11px 40px !important;
+    border-radius: 4px !important;
     position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 10px rgba(13, 51, 128, 0.3) !important;
 }
 
 .apply-btn a i {
-    position: absolute !important;
-    font-size: 20px !important;
-    left: -40px !important;
-    top: 0 !important;
-    padding: 10px !important;
-    width: 40px !important;
-    height: 100% !important;
-    border-radius: 5px 0 0 5px !important;
-    background-color: #0CA044 !important;
+    font-size: 16px !important;
     color: #ffffff !important;
+    margin-right: 4px !important;
+    position: absolute !important;
+    left: 5px !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #082c70 !important;
+    border-radius: 4px 0 0 4px !important;
 }
 
 .apply-btn a:hover {
-    background: #0CA044 !important;
+    background: linear-gradient(135deg, #082c70 0%, #061d4c 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 6px 15px rgba(13, 51, 128, 0.5) !important;
+}
+
+/* Navigation fixes */
+.main-menu .main-menu-box .menu-box {
+    padding: 0 !important;
+}
+
+.main-menu .main-menu-box .menu-box ul.nav.menu-nav {
+    justify-content: flex-end !important;
+    margin-right: 5px !important;
+}
+
+.main-menu .main-menu-box .menu-box ul.nav.menu-nav li.nav-item {
+    margin: 0 !important;
+}
+
+.main-menu .main-menu-box .menu-box ul.nav.menu-nav li.nav-item a.nav-link {
+    padding: 12px 10px !important;
 }
 
 /* Responsive Fixes */
@@ -139,5 +169,6 @@
     
     .apply-btn {
         margin-top: 15px !important;
+        margin-left: 0 !important;
     }
 } 

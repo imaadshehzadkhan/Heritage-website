@@ -21,7 +21,7 @@ function FreeCourse() {
             const phoneValue = phone.value.trim();
 
             if (nameValue === "") {
-                setError(name, "Name can't be blank");
+                setError(name, "Name can't be blank in this ");
             } else {
                 setSuccess(name);
             }

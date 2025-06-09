@@ -23,7 +23,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "sass": "^1.68.0",
-    "styled-components": "^5.1.1",
+    "styled-components": "^5.3.11",
+    "styles": "^0.2.1",
     "swiper": "^5.4.5"
   },
   "homepage": "http://www.thetahmid.com/themes/edulyn-v1.0",

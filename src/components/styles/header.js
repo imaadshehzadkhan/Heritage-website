@@ -86,6 +86,14 @@ export const Styles = styled.div`
                         margin-right  : 5px;
                     }
 
+                    &.address-li {
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-weight: 500;
+                        }
+                    }
+
                     &:last-child {
                         border-right: 1px solid ${colors.border2};
                     }

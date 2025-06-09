@@ -34,18 +34,20 @@ class IconBox extends Component {
                 {/* Icon Box */}
                 <section className="icon-box-area">
                     <Container>
-                        <Row>
+                        <Row className="justify-content-center">
                             {
                                 Datas.map((data, i) => (
-                                    <Col md="4" key={i}>
+                                    <Col lg={4} md={4} sm={12} key={i}>
                                         <div className="full-icon-box animated-box">
-                                            <div className="icon-box d-flex">
+                                            <div className="icon-box">
+                                                <div className="d-flex align-items-center">
                                                 <div className={`${data.uniqClass} animate__animated animate__pulse animate__infinite animate__slower`}>
                                                     <i className={data.boxIcon}></i>
                                                 </div>
                                                 <div className="box-title">
                                                     <h6>{data.title}</h6>
                                                     <p>{data.subTitle}</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

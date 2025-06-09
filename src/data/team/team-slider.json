@@ -3,7 +3,7 @@
     "dataList": [
         {
             "id": "1",
-            "personImage": "team-1.jpg",
+            "personImage": "assets/images/team/principal.jpeg",
             "personName": "Emily Perrey",
             "personTitle": "Teacher",
             "socialLinks": {

@@ -4,7 +4,7 @@ import { Styles } from "./styles/breadcrumb.js";
 
 export class BreadcrumbBox extends Component {
     state = {
-        backgroundImage: 'breadcrumb-bg.jpg',
+        backgroundImage: 'highlight2.jpg',
     }
 
     render() {
@@ -15,7 +15,7 @@ export class BreadcrumbBox extends Component {
                         <Row>
                             <Col md="12" className="text-center">
                                 <div className="breadcrumb-box">
-                                    <h2 className="breadcrumb-title">{this.props.title}</h2>
+                                    <h2 className="breadcrumb-title" style={{ color: "#ffffff" }}>{this.props.title.toUpperCase()}</h2>
                                     <Breadcrumb>
                                         <Breadcrumb.Item>Home</Breadcrumb.Item>
                                         <Breadcrumb.Item active>{this.props.title}</Breadcrumb.Item>

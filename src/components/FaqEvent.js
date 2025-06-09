@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Datas from '../data/faq-event/faq-event.json';
-import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Styles } from "./styles/faqEvent.js";
 
@@ -25,44 +24,14 @@ function FaqEvent() {
 
     return (
         <Styles>
-            {/* Faq & Event */}
+            {/* Faq Section */}
             <section className="event-faq-area">
                 <Container>
                     <Row>
                         <Col md="6">
-                            <div className="event-area">
-                                <Row>
-                                    <Col md="12">
-                                        <div className="sec-title">
-                                            <h4>Upcoming <span>Events</span></h4>
-                                        </div>
-                                    </Col>
-                                    <Col md="12">
-                                        {
-                                            Datas.eventDataList.map((eventData, i) => (
-                                                <div className="event-box d-flex" key={i}>
-                                                    <div className="event-date text-center">
-                                                        <p>{eventData.eventDate}</p>
-                                                    </div>
-                                                    <div className="event-details">
-                                                        <h6><Link to={eventData.eventLink}>{eventData.eventTitle}</Link></h6>
-                                                        <ul className="list-unstyled list-inline">
-                                                            <li className="list-inline-item"><i className="las la-clock"></i>{eventData.eventTime}</li>
-                                                            <li className="list-inline-item"><i className="las la-map-marker"></i>{eventData.eventLocation}</li>
-                                                        </ul>
-                                                        <p>{eventData.eventdesc}</p>
-                                                    </div>
-                                                </div>
-                                            ))
-                                        }
-                                    </Col>
-                                </Row>
-                            </div>
-                        </Col>
-                        <Col md="6">
                             <div className="faq-area">
                                 <div className="sec-title">
-                                    <h4>Frequently Ask <span>Question</span></h4>
+                                    <h4>Frequently Asked <span>Questions</span></h4>
                                 </div>
                                 <div className="faq-box">
                                     {
@@ -78,6 +47,63 @@ function FaqEvent() {
                                             </div>
                                         ))
                                     }
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md="6">
+                            <div className="faq-area">
+                                <div className="sec-title">
+                                    <h4>Parents <span>Speak</span></h4>
+                                </div>
+                                <div className="testimonial-area">
+                                    <div className="testimonial-box">
+                                        <div className="testimonial-content">
+                                            <div className="testimonial-icon">
+                                                <i className="las la-quote-left"></i>
+                                            </div>
+                                            <p>"I am highly satisfied, The Heritage is doing excellent in all fields. Very nicely planned and organized academic programme. I feel my decision to get my kids admitted was the best ever. Keep it up! Heritage."</p>
+                                            <div className="testimonial-name">
+                                                <h6>Bhat Parvaiz</h6>
+                                                <p>R/O:- Hail Kreeri</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="testimonial-box">
+                                        <div className="testimonial-content">
+                                            <div className="testimonial-icon">
+                                                <i className="las la-quote-left"></i>
+                                            </div>
+                                            <p>"THE HERITAGE is providing an inclusive environment where students feel valued and supported every student is excelling."</p>
+                                            <div className="testimonial-name">
+                                                <h6>Mohd Ashraf</h6>
+                                                <p>R/O:- Choora Sopore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="testimonial-box">
+                                        <div className="testimonial-content">
+                                            <div className="testimonial-icon">
+                                                <i className="las la-quote-left"></i>
+                                            </div>
+                                            <p>"HERITAGE Shapes and future and lifts the students up!"</p>
+                                            <div className="testimonial-name">
+                                                <h6>Fayaz Ahmad Khan</h6>
+                                                <p>R/O:- Dungdara Kreeri</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="testimonial-box">
+                                        <div className="testimonial-content">
+                                            <div className="testimonial-icon">
+                                                <i className="las la-quote-left"></i>
+                                            </div>
+                                            <p>"Heritage is always at the top and ahead of all."</p>
+                                            <div className="testimonial-name">
+                                                <h6>Hilal Ahmad</h6>
+                                                <p>R/O:- Chandkote</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </Col>

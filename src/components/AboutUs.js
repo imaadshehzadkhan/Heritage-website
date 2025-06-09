@@ -94,26 +94,34 @@ class AboutUs extends Component {
                                 <div className="about-content">
                                     <h4 className="about-title scroll-animation" data-animation="animate__fadeInRight" data-delay="0.3s">About The Heritage School</h4>
                                     <p className="about-para scroll-animation" data-animation="animate__fadeInRight" data-delay="0.5s">
-                                        The Heritage School is a premier educational institution committed to nurturing young minds through a balanced blend of academic excellence and moral values. 
-                                        <span className="scroll-animation" data-animation="animate__fadeIn" data-delay="1s">Our school provides a dynamic learning environment where students can discover their potential and grow into responsible global citizens.</span>
+                                        The Heritage School presently operates from its New Campus in Hygam, set among lush green orchards near Flour Mill Hygam on the left side of Sopore–Srinagar National Highway, just 100 meters ahead towards Modal Village Hygam Sopore, District Baramulla, J&K.
+                                    </p>
+                                    <p className="about-para scroll-animation" data-animation="animate__fadeInRight" data-delay="0.7s">
+                                        The School is the brainchild of Mohammad Maqbool, founded in 2007. It is transforming dreams into reality by providing quality education to the rural vicinity at affordable fees and ultimately producing elite human assets for society. The school has successfully overcome all difficult barriers created in its path during its establishment, and now with the grace of Almighty Allah, the school is touching the skies.
+                                    </p>
+                                    <p className="about-para scroll-animation" data-animation="animate__fadeInRight" data-delay="0.9s">
+                                        The Heritage School provides a congenial atmosphere to nurture young minds to achieve the impossible. Recognized by the J&K Government, the school is also accredited by many organizations and institutions of repute and is ISO-Certified. Presently, the school has 700 students enrolled and about 62 staff members working in the Heritage family.
+                                    </p>
+                                    <p className="about-para scroll-animation" data-animation="animate__fadeInRight" data-delay="1.1s">
+                                        <strong>Our aim is to achieve the goals efficiently!</strong>
                                     </p>
                                     <Row>
                                         <Col sm="4">
                                             <div className="counter-box box1 text-center scroll-animation counter-trigger" data-animation="animate__fadeInUp" data-delay="0.4s">
-                                                <h3><CountUp end={970} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
+                                                <h3><CountUp end={700} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
                                                 <p>Happy Students</p>
                                             </div>
                                         </Col>
                                         <Col sm="4">
                                             <div className="counter-box box2 text-center scroll-animation counter-trigger" data-animation="animate__fadeInUp" data-delay="0.6s">
-                                                <h3><CountUp end={130} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
+                                                <h3><CountUp end={62} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
                                                 <p>Teachers</p>
                                             </div>
                                         </Col>
                                         <Col sm="4">
                                             <div className="counter-box box3 text-center scroll-animation counter-trigger" data-animation="animate__fadeInUp" data-delay="0.8s">
-                                                <h3><CountUp end={340} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
-                                                <p>Courses</p>
+                                                <h3><CountUp end={15} duration={3} start={this.state.countStarted ? null : 0} /><i className="las la-plus"></i></h3>
+                                                <p>Years of Excellence</p>
                                             </div>
                                         </Col>
                                     </Row>

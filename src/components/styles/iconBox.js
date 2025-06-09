@@ -3,170 +3,114 @@ import { colors } from "../common/element/elements.js";
 
 export const Styles = styled.div`
     .icon-box-area {
-        padding-bottom: 80px;
+        padding: 0 0 80px;
+        margin-top: -20px;  /* Reduced from -60px to move boxes down */
+        position: relative;
+        z-index: 99;
 
         .full-icon-box {
             position: relative;
+            margin-bottom: 20px;
 
             .icon-box {
-                position  : absolute;
-                top       : -20px;
-                left      : 0;
-                width     : 100%;
+                position: relative;  /* Changed from absolute */
                 background: #fff;
-                padding   : 35px 20px 20px;
-                z-index   : 9;
+                padding: 30px 25px;  /* Adjusted padding */
+                z-index: 9;
                 box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
-                border-radius : 5px;
+                border-radius: 8px;  /* Slightly more rounded corners */
+                height: 100%;  /* Ensure equal height */
+                transition: all 0.3s ease;
+                display: flex;
+                flex-direction: column;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                }
 
                 .box-icon {
-                    background  : ${colors.bg1};
-                    height      : 36px;
-                    text-align  : center;
-                    margin-right: 20px;
-                    position    : relative;
+                    background: ${colors.bg1};
+                    height: 80px;  /* Increased height */
+                    width: 80px;   /* Increased width */
+                    flex-shrink: 0;
+                    text-align: center;
+                    margin-right: 25px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;  /* Make icons circular */
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
                     i {
-                        font-size : 34px;
-                        color     : #ffffff;
-                        width     : 60px;
-                        display   : inline-block;
-                        position  : relative;
-                        z-index   : 111;
-                        margin-top: -8px;
+                        font-size: 40px;  /* Increased font size */
+                        color: #ffffff;
+                        display: inline-block;
+                        line-height: 1;
                         
                         @media(max-width: 991px) {
-                            font-size: 24px;
-                            width : 45px;
-                        }
-                        
-                        @media(max-width: 767px) {
-                            font-size: 34px;
-                            width : 60px;
+                            font-size: 32px;  /* Increased font size for tablets */
                         }
                     }
 
-                    &::before {
-                        content            : "";
-                        position           : absolute;
-                        border-width       : 15px 30px;
-                        border-style       : solid;
-                        border-top-color   : transparent;
-                        border-right-color : transparent;
-                        border-bottom-color: ${colors.bg1};
-                        border-left-color  : transparent;
-                        top                : -30px;
-                        left               : 0;
-                        z-index            : 1;
-
-                        @media(max-width: 991px) {
-                            border-width: 12px 23px;
-                            top: -24px;
-                        }
-
-                        @media(max-width: 767px) {
-                            border-width       : 15px 30px;
-                            top                : -30px;
-                        }
-                    }
-
-                    &:after {
-                        content            : "";
-                        position           : absolute;
-                        border-width       : 15px 30px;
-                        border-style       : solid;
-                        border-top-color   : ${colors.bg1};
-                        border-right-color : transparent;
-                        border-bottom-color: transparent;
-                        border-left-color  : transparent;
-                        bottom             : -30px;
-                        left               : 0;
-                        z-index            : 1;
-
-                        @media(max-width: 991px) {
-                            border-width: 12px 23px;
-                            bottom: -24px;
-                        }
-
-                        @media(max-width: 767px) {
-                            border-width       : 15px 30px;
-                            bottom             : -30px;
-                        }
+                    /* Remove before/after pseudo elements that create the triangle shapes */
+                    &::before, &::after {
+                        display: none;
                     }
 
                     @media(max-width: 991px) {
-                        height: 22px;
-                        margin-right: 10px;
-                    }
-
-                    @media(max-width: 767px) {
-                        height: 36px;
-                        margin-right: 20px;
+                        height: 65px;  /* Increased height for tablets */
+                        width: 65px;   /* Increased width for tablets */
+                        margin-right: 15px;
                     }
                 }
 
                 .box-icon.box1 {
                     background: ${colors.red};
-
-                    &:before {
-                        border-bottom-color: ${colors.red};
-                    }
-
-                    &:after {
-                        border-top-color: ${colors.red};
-                    }
                 }
 
                 .box-icon.box2 {
                     background: ${colors.purple};
-
-                    &:before {
-                        border-bottom-color: ${colors.purple};
-                    }
-
-                    &:after {
-                        border-top-color: ${colors.purple};
-                    }
                 }
 
                 .box-icon.box3 {
                     background: ${colors.blue};
-
-                    &:before {
-                        border-bottom-color: ${colors.blue};
-                    }
-
-                    &:after {
-                        border-top-color: ${colors.blue};
-                    }
                 }
 
                 .box-title {
-                    margin-top: -15px;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
 
                     h6 {
-                        color         : ${colors.black1};
+                        color: ${colors.black1};
                         text-transform: uppercase;
-                        font-weight   : 600;
-                        margin-bottom : 6px;
+                        font-weight: 600;
+                        margin-bottom: 10px;  /* Increased spacing */
+                        font-size: 18px;  /* Slightly larger title */
 
                         @media(max-width: 991px) {
-                            font-size: 14px;
+                            font-size: 16px;
                             letter-spacing: 0;
                         }
 
                         @media(max-width: 767px) {
-                            font-size: 16px;
+                            font-size: 17px;
                             letter-spacing: 0.3px;
                         }
                     }
 
                     p {
-                        font-size: 14px;
-                        color    : ${colors.text3};
+                        font-size: 15px;  /* Increased text size */
+                        line-height: 1.5;  /* Better line height */
+                        color: ${colors.text3};
+                        margin-bottom: 0;
 
                         @media(max-width: 991px) {
-                            font-size: 13px;
+                            font-size: 14px;
                         }
 
                         @media(max-width: 767px) {
@@ -176,19 +120,19 @@ export const Styles = styled.div`
                 }
 
                 @media(max-width: 991px) {
-                    padding: 25px 10px 8px;
+                    padding: 25px 20px;  /* Increased padding for tablets */
                 }
 
                 @media(max-width: 767px) {
-                    padding: 35px 20px;
-                    position: unset;
+                    padding: 25px 20px;
                     margin-bottom: 25px;
                 }
             }
         }
 
         @media(max-width: 767px) {
-            padding: 40px 0 0;
+            padding: 70px 0 30px;  /* Adjust padding for mobile */
+            margin-top: 20px;  /* Positive margin for mobile to move down */
         }
     }
 `;
